@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
   Future<UserCredential> signInWithGoogle() async {
     try {
       FirebaseAuth.instance.authStateChanges().listen(
-      (User user) {F
+      (User user) {
         if (user == null) {
           print('User is currently signed out!');
 
